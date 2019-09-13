@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edis inloggningssida</title>
+    <title>Portal Campus Värnamo</title>
 </head>
+
 <body>
-    <h2>Välkommen!</h2><br>
-    <h3>Vänligen ange användarnamn och lösenord nedan:</h3>
+
     <div id="loggainsection">
+    <h2>Välkommen!</h2><br>
+    
+    <fieldset class="fieldset-auto-width">
+        <legend><h3>Vänligen ange användarnamn och lösenord nedan:</h3></legend>
         <input id="username" type="text" value="" />
         <input id="password" type="password" value="" />
         <input type="button" value="Logga in" onclick="login()"/>
+        </fieldset>
     </div>
 
     <div id="loggedin">
-        Välkommen
+        Välkommen!
         <input type="button" value="Logga ut" onclick="loggaut()" />
     </div>
 
     <div id="failed">
         Fel användarnamn eller lösenord
     </div>
-
     <script src="script.js"></script>
+
 </body>
 </html>
