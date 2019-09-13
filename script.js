@@ -3,8 +3,8 @@
 var username = "test" //Specifikt användarnamn
 var password = "1234" //Specifikt lösenord
 
-var userelement = document.getElementById("username") // Hämtar inputfältet för username
-var passwordelement = document.getElementById("password") // Hämtar inputfältet för password
+var userelement = document.getElementById("username") // Hämtar värdet i inputfältet för username
+var passwordelement = document.getElementById("password") // Hämtar värdet i inputfältet för password
 
 var loggainsection = document.getElementById("loggainsection") // Variabel för att hämta inloggningssidan "loggainsection"
 var loggedin = document.getElementById("loggedin") // Variabel för att hämta sidan "loggedin" vid rätt lösenord
@@ -37,6 +37,15 @@ function loggaut() {
 }
 // ****** Slut funktion för logga ut ****** //
 
+// ****** Start funktion för tillbakaknapp ****** //
+
+function back() { 
+    failed.style.display = "none"; //Gömmer fel lösenord sidan
+    loggedin.style.display = "none"; //Gömmer välkommen-sidan
+    loggainsection.style.display = "block"; //Visar sidan med inmatningsfält
+}
+
+// ****** Slut funktion för tillbakaknapp ****** //
 
 // ****** Start funktion för logga in ****** //
 
